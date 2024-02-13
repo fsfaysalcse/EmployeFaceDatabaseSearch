@@ -19,17 +19,39 @@ repository: [Employee Face Search Android](https://github.com/fsfaysalcse/Employ
    git clone https://github.com/fsfaysalcse/FaceUnlockFlask.git
     ```
 
-2. Install the required packages
+2. Create a virtual environment
+   ```sh
+   python -m venv venv
+   ```
+3. Activate the virtual environment
+   ```sh
+   # For Windows
+   venv\Scripts\activate
+   # For Linux
+   source venv/bin/activate
+   ## For Mac
+    source venv/bin/activate
+   ```   
+
+4. Install the required packages
     ```sh
        pip install -r requirements.txt
    ```
-3. Configure Database
+   
+5. Install XAMPP for MySQL Database
+   ```sh
+   # Download XAMPP from the following link
+   https://www.apachefriends.org/download.html
+   # Install XAMPP
+   # Start Apache and MySQL
+   ```
+6. Configure Database
    ```sh
    # Open the app.py file and change the database configuration
    # Change the database configuration
    app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://username:password@localhost/db_name'
    ```   
-4. Run the server
+7. Run the server
    ```sh
    python app.py
    ```
@@ -67,7 +89,6 @@ curl --location 'http://127.0.0.1:9090/search' \
 Note: You can use the client application to detect the employee face. The client application is built with Python and
 OpenCV. You can find the client Android application in the following repository.
 Android Client Repository: [Employee Face Search Android](https://github.com/fsfaysalcse/EmployeeFaceSearch/tree/main)
-
 
 **Ask Me Anything , I'm here to help you :) →**
 
